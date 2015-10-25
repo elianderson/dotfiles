@@ -1,9 +1,6 @@
 [submodule "dotfiles/.oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:elianderson/oh-my-zsh.git
-[submodule ".vim/bundle/Command-T"]
-	path = .vim/bundle/Command-T
-	url = https://github.com/wincent/Command-T.git
 [submodule ".vim/bundle/PickAColor"]
 	path = .vim/bundle/PickAColor
 	url = https://github.com/vim-scripts/PickAColor.vim.git
@@ -100,3 +97,6 @@
 [submodule ".vim/bundle/ultisnips.git"]
 	path = .vim/bundle/ultisnips.git
 	url = https://github.com/SirVer/ultisnips.git
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git

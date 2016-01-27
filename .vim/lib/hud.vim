@@ -1,6 +1,8 @@
 set hidden "Show hidden files
 set showmode
 
+set t_ut= "fix that display bug that has been bugging me for a while
+
 set number               " Show line numbers
 set cursorline           " Always show cursor line
 set novisualbell         " I don't mind beeping
@@ -24,7 +26,7 @@ set showcmd                    " display incomplete commands
 
 set noswapfile                 " Thats right, its annoying having to clean these up
 
-set clipboard+=unnamed        " yanks go on clipboard
+set clipboard=unnamedplus        " yanks go on clipboard
 
 "===  Tab  ====================================================================
 let s:tab_num = 2          " How many spaces will tab be worth?

@@ -2,7 +2,8 @@
 " CommandT
 "==============================================================================
 let g:CommandTMatchWindowAtTop=1 " show window at top
-noremap <leader>f :CommandT<return>
+let g:ctrlp_working_path_mode = 'ra'
+noremap <leader>f :CtrlP<return>
 "==============================================================================
 " ZenCoding
 "==============================================================================

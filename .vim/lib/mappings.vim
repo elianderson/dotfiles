@@ -19,9 +19,6 @@ imap jj <esc>
 " imap on't require shift for entering commands
 noremap ; :
 
-" Clear search highlighting
-"nnoremap <esc> :noh<return><esc>
-
 " Remove arrow key functionality
 nmap <Down> <c-d>
 nmap <Up> <c-u>

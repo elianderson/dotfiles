@@ -45,3 +45,6 @@
 [submodule ".vim/pack/eli/start/vim-tmux-clipboard"]
 	path = .vim/pack/eli/start/vim-tmux-clipboard
 	url = https://github.com/roxma/vim-tmux-clipboard.git
+[submodule ".vim/pack/eli/start/vim-slim"]
+	path = .vim/pack/eli/start/vim-slim
+	url = https://github.com/slim-template/vim-slim.git

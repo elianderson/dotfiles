@@ -36,6 +36,7 @@ set smarttab               " figure correct spaces to inject per tab
 
 "===  Custom colorscheme  =====================================================
 color molokai
+hi Normal guibg=NONE ctermbg=NONE
 set t_Co=256
 "===  zsh ftw  ================================================================
 set shell=zsh

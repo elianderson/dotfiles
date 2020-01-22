@@ -3,7 +3,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 " Clear search highlighting
-nnoremap <esc> :noh<return><esc>
+nnoremap <c-n> :noh<cr>
 
 set ignorecase " perfect cocktail for searching
 set smartcase  " perfect cocktail for searching

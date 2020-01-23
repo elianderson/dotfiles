@@ -24,7 +24,7 @@ set showcmd                    " display incomplete commands
 
 set noswapfile                 " Thats right, its annoying having to clean these up
 
-set clipboard+=unnamed        " yanks go on clipboard
+set clipboard=unnamedplus        " yanks go on clipboard
 
 "===  Tab  ====================================================================
 let s:tab_num = 2          " How many spaces will tab be worth?

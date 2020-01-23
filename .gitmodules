@@ -48,3 +48,6 @@
 [submodule ".vim/pack/eli/start/vim-slim"]
 	path = .vim/pack/eli/start/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
+[submodule ".vim/pack/eli/start/vim-surround"]
+	path = .vim/pack/eli/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git

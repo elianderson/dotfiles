@@ -9,9 +9,6 @@
 [submodule ".vim/pack/eli/start/vim-matchit"]
 	path = .vim/pack/eli/start/vim-matchit
 	url = https://github.com/adelarsq/vim-matchit.git
-[submodule ".vim/pack/eli/start/syntastic"]
-	path = .vim/pack/eli/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule ".vim/pack/eli/start/vim-css-color"]
 	path = .vim/pack/eli/start/vim-css-color
 	url = https://github.com/ap/vim-css-color.git
@@ -51,3 +48,6 @@
 [submodule ".vim/pack/eli/start/vim-surround"]
 	path = .vim/pack/eli/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/eli/start/ale"]
+	path = .vim/pack/eli/start/ale
+	url = https://github.com/dense-analysis/ale.git

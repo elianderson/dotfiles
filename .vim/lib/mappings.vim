@@ -39,7 +39,7 @@ map <C-l> <C-w>l
 map <leader>w <C-w>v<C-w>l
 
 " Quick save
-nnoremap <leader>m :w <return>
+nnoremap <leader>m :wa <return>
 
 " Death to whitespace
 nmap <F5> :%s/\s\+$//<return>

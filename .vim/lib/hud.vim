@@ -66,6 +66,7 @@ function! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
     %s/\s\+$//e
+    %s#\($\n\s*\)\+\%$##
     call cursor(l, c)
 endfun
 autocmd BufWritePre *.yml,*.js,*.rb,*.c,*.java :call <SID>StripTrailingWhitespaces()

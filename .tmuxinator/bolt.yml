@@ -1,0 +1,11 @@
+# ~/.tmuxinator/bolt.yml
+
+name: bolt
+root: ~/Projects/bolt
+
+windows:
+  - editor: vim
+  - zsh:
+  - test:
+  - docker: dc build; dc up
+  - authly: authly_dev_loop

@@ -26,6 +26,8 @@ set noswapfile                 " Thats right, its annoying having to clean these
 
 set clipboard=unnamedplus        " yanks go on clipboard
 
+set autoread                    "look for changes outside of vim
+
 "===  Tab  ====================================================================
 let s:tab_num = 2          " How many spaces will tab be worth?
 let &softtabstop=s:tab_num

@@ -52,3 +52,21 @@
 [submodule ".vim/pack/eli/start/ale"]
 	path = .vim/pack/eli/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule ".vim/pack/eli/start/typescript-vim"]
+	path = .vim/pack/eli/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/pack/eli/start/vim-jsx-typescript.git"]
+	path = .vim/pack/eli/start/vim-jsx-typescript.git
+	url = https://github.com/peitalin/vim-jsx-typescript.git
+[submodule ".vim/pack/eli/start/vim-js-pretty-template"]
+	path = .vim/pack/eli/start/vim-js-pretty-template
+	url = https://github.com/Quramy/vim-js-pretty-template.git
+[submodule ".vim/pack/eli/start/vim-js-indent"]
+	path = .vim/pack/eli/start/vim-js-indent
+	url = https://github.com/jason0x43/vim-js-indent.git
+[submodule ".vim/pack/eli/start/vim-typings"]
+	path = .vim/pack/eli/start/vim-typings
+	url = https://github.com/mhartington/vim-typings.git
+[submodule ".vim/pack/eli/start/tsuquyomi"]
+	path = .vim/pack/eli/start/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi.git

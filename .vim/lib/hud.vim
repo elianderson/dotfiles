@@ -24,9 +24,17 @@ set showcmd                    " display incomplete commands
 
 set noswapfile                 " Thats right, its annoying having to clean these up
 
-set clipboard=unnamedplus        " yanks go on clipboard
-
 set autoread                    "look for changes outside of vim
+
+let uname = substitute(system('uname'), '\n', '', '')
+" Example values: Linux, Darwin, MINGW64_NT-10.0, MINGW32_NT-6.1
+
+if uname == 'Darwin'
+  set clipboard=unnamed        " yanks go on clipboard
+elseif uname == 'Linux'
+  set clipboard=unnamedplus        " yanks go on clipboard
+endif
+" if exists('$TMUX')
 
 "===  Tab  ====================================================================
 let s:tab_num = 2          " How many spaces will tab be worth?

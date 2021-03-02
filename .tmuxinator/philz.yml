@@ -1,0 +1,13 @@
+# ~/.tmuxinator/philz.yml
+
+name: philz
+root: ~/Projects/Philz
+pre_window: nvm use
+
+windows:
+  - editor: vim
+  - command:
+  - test:
+  - p4: cd admin; npm run start
+  - app: cd app; npm run start
+  - api: cd api; php artisan serve --port=8080

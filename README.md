@@ -8,3 +8,8 @@ https://www.nerdfonts.com/font-downloads
 brew tap homebrew/cask-fonts
 brew install --cask font-<nerd font name>-nerd-font
 ```
+
+
+Install fzf and run the command line helpers - its sweet
+
+https://github.com/junegunn/fzf#using-homebrew

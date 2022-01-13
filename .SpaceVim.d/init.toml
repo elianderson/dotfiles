@@ -11,13 +11,9 @@
   # set spacevim theme. by default colorscheme layer is not loaded,
   # if you want to use more colorscheme, please load the colorscheme
   # layer
-  colorscheme = "molokai"
+  colorscheme = 'molokai'
   colorscheme_bg = 'dark'
-  # Disable guicolors in basic mode, many terminal do not support 24bit
-  # true colors
   enable_guicolors = true
-  # Disable statusline separator, if you want to use other value, please
-  # install nerd fonts
   statusline_separator = 'arrow'
   statusline_inactive_separator = 'arrow'
   buffer_index_type = 4
@@ -27,10 +23,12 @@
   filemanager = "nerdtree"
   bootstrap_before = 'init#before'
   bootstrap_after = 'init#after'
-  relativenumber = false
-  enable_neomake = false
-  enable_ale = true
+  # enable_neomake = false
+  # enable_ale = true
   lint_on_the_fly = true
+  relativenumber = false
+  lint_engine = 'ale'
+  # lint_engine = 'syntastic'
 
 [[custom_plugins]]
 name = 'ryanoasis/vim-devicons'
@@ -50,6 +48,10 @@ merged = 0
 
 [[custom_plugins]]
 name = 'tpope/vim-commentary'
+merged = 0
+
+[[custom_plugins]]
+name = 'slim-template/vim-slim'
 merged = 0
 
 # Enable autocomplete layer
@@ -83,4 +85,6 @@ name = "fzf"
 
 # [[layers]]
 # name = "checkers"
-# show_cursor_error = false
+# show_cursor_error = true
+# lint_on_the_fly = true
+# lint_on_save = false

@@ -51,7 +51,21 @@ function! init#after() abort
 
   nnoremap / /\v
   vnoremap / /\v
+  nnoremap <silent> <Leader>f :call FZFProjectRoot()<CR>
+  nnoremap <silent> <Leader>v :NERDTreeToggle<CR>
 
-  autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+  " autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
   autocmd FileType php setlocal expandtab shiftwidth=4 softtabstop=4
+
+  set t_ZH=[3m
+  set t_ZR=[23m
+endfunction
+
+function! FZFProjectRoot()
+    let project_root = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+    if strlen(project_root) > 0
+        call fzf#run(fzf#wrap('FZFProjectRoot', {'dir': project_root}))
+    else
+        call fzf#run(fzf#wrap('FZFProjectRoot'))
+    endif
 endfunction

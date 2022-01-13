@@ -4,10 +4,13 @@ name: philz
 root: ~/Projects/Philz
 pre_window: nvm use
 
+pre:
+
 windows:
   - editor: vim
-  - command:
+  - zsh:
   - test:
-  - p4: cd admin; npm run start
-  - app: cd app; npm run start
-  - api: cd api; php artisan serve --port=8080
+  - ecomm: cd ecomm; ./bin/rails s
+  - api: cd api; tail -f storage/logs/laravel.log
+  # - p4: cd admin; npm run start
+  # - app: cd app; npm run start

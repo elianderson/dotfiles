@@ -4,7 +4,7 @@ function! init#before() abort
   imap jj <esc>
 
     " Quick save
-  nnoremap <leader>m :wa! <return>
+  nnoremap <leader>m :wa!<return>
 endfunction
 
 function! init#after() abort
@@ -59,6 +59,15 @@ function! init#after() abort
 
   set t_ZH=[3m
   set t_ZR=[23m
+
+  " Remove all trailing whitespace on save
+  " function! <SID>StripTrailingWhitespaces()
+  "     let l = line(".")
+  "     let c = col(".")
+  "     %s/\s\+$//e
+  "     call cursor(l, c)
+  " endfun
+  " autocmd BufWritePre *.yml,*.js,*.rb,*.c,*.java,*.ts, :call <SID>StripTrailingWhitespaces()
 endfunction
 
 function! FZFProjectRoot()
@@ -69,3 +78,4 @@ function! FZFProjectRoot()
         call fzf#run(fzf#wrap('FZFProjectRoot'))
     endif
 endfunction
+

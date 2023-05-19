@@ -1,6 +1,6 @@
 [user]
     name = Eli Anderson
-    email = elianderson03@gmail.com
+	email = elianderson@philzcoffee.com
 [apply]
   whitespace = fix
 [core]
@@ -50,3 +50,8 @@
   br = branch
 [push]
 	default = matching
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

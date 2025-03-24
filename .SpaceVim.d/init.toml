@@ -58,6 +58,10 @@ merged = 0
 name = 'elixir-editors/vim-elixir'
 merged = 0
 
+[[custom_plugins]]
+name = 'amadeus/vim-mjml'
+merged = 0
+
 # Enable autocomplete layer
 # [[layers]]
 # name = 'autocomplete'

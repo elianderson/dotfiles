@@ -10,7 +10,7 @@ windows:
   - editor: vim
   - zsh:
   - test:
-  - ecomm: cd ecomm; ./bin/rails s
+  - ecomm: cd ecomm; ./bin/dev
   - api: cd api; tail -f storage/logs/laravel.log
   # - p4: cd admin; npm run start
   # - app: cd app; npm run start

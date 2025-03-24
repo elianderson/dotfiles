@@ -9,7 +9,9 @@ read -p "Do you want to proceed? (Y/N) " -n 1
 echo
 echo
 
-files=(".SpaceVim.d/init.toml" ".SpaceVim.d/autoload/init.vim" ".tmuxinator" ".tmuxinator.zsh" ".gitconfig" ".tmux.conf")
+files=(
+  .SpaceVim.d/init.toml .SpaceVim.d/autoload/init.vim .tmuxinator .tmuxinator.zsh .gitconfig .tmux.conf 'Library/Application Support/Code/User/settings.json' 'Library/Application Support/Code/User/keybindings.json'
+)
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   for file in "${files[@]}"; do

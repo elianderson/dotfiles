@@ -1,0 +1,48 @@
+{
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "none",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "m"],
+            "commands": [":wa!"]
+        },
+        {
+            "before": ["<C-t>"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.navigateLeft"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.navigateRight"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.togglePanel", "workbench.action.terminal.focus"]
+        },
+        {
+            "before": ["<C-[>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<C-]>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader" : ",",
+}

@@ -57,6 +57,9 @@ function! init#after() abort
   " autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
   autocmd FileType php setlocal expandtab shiftwidth=4 softtabstop=4
 
+  " add jbuilder syntax highlighting
+  au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
   set t_ZH=[3m
   set t_ZR=[23m
 

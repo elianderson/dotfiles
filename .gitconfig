@@ -1,6 +1,6 @@
 [user]
     name = Eli Anderson
-    email = elianderson@philzcoffee.com
+    email = elianderson03@gmail.com
 [apply]
   whitespace = fix
 [core]
@@ -50,3 +50,5 @@
   br = branch
 [push]
 	default = matching
+[pull]
+	rebase = false

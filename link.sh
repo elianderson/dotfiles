@@ -10,14 +10,17 @@ echo
 echo
 
 files=(
-  .SpaceVim.d/init.toml .SpaceVim.d/autoload/init.vim .tmuxinator .tmuxinator.zsh .gitconfig .tmux.conf 'Library/Application Support/Code/User/settings.json' 'Library/Application Support/Code/User/keybindings.json'
+  .SpaceVim.d/init.toml .SpaceVim.d/autoload/init.vim .tmuxinator .tmuxinator.zsh .gitconfig .tmux.conf `Library/Application Support/Code/User/settings.json` `Library/Application Support/Code/User/keybindings.json`
 )
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   for file in "${files[@]}"; do
-    if test -e ~/$file; then
+    echo "~/$file"
+    if [[ -e ~/$file ]]; then
+      echo 'file found'
       rm -rf  ~/$file
     fi
-    ln -s $SCRIPT_DIR/$file ~/$file
+    echo "$SCRIPT_DIR/$file"
+    ln -sf $SCRIPT_DIR/$file ~/$file
   done
 fi

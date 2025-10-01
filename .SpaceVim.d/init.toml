@@ -35,7 +35,7 @@ name = 'ryanoasis/vim-devicons'
 merged = 0
 
 [[custom_plugins]]
-name = 'pangloss/vim-javascript'
+name = 'jelera/vim-javascript-syntax'
 merged = 0
 
 [[custom_plugins]]
